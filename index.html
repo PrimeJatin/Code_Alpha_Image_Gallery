@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <section>
+            <div class="container">
+                <div class="box active imgOne">
+                    <span class="date enable">
+                        <h3>1 Jan 2025</h3>
+                    </span>
+                </div>
+                <div class="box imgTwo">
+                    <span class="date">
+                        <h3>10 Feb 2025</h3>
+                    </span>
+                </div>
+                <div class="box imgThree">
+                    <span class="date">
+                        <h3>10 Des 2024</h3>
+                    </span>
+                </div>
+                <div class="box imgFour">
+                    <span class="date">
+                        <h3>4 Jan 2025</h3>
+                    </span>
+                </div>
+                <div class="box imgFive">
+                    <span class="date">
+                        <h3>20 oct 2024</h3>
+                    </span>
+                </div>
+            </div>
+        </section>       
+    </header>
+    <main>
+
+        <!-- Heading Section  -->
+
+        <section>
+            <div class="heading">
+                <h1>
+                    <span class="textOne">Photo</span>
+                    <span class="textTwo">Gallery</span>
+                </h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="imgSec">
+
+                <div onclick="viewImg(0)" class="boxImg">
+                    <img src="imgSec/imgEight.jpg" alt="">
+                </div>
+
+                <div onclick="viewImg(1)" class="boxImg">
+                    <img src="imgSec/imgFive.jpg" alt="">
+                </div>
+
+                <div onclick="viewImg(2)" class="boxImg">
+                    <img src="imgSec/imgFour.jpg" alt="">
+                </div>
+
+                <div onclick="viewImg(3)" class="boxImg">
+                    <img src="imgSec/imgNine.jpg" alt="">
+                </div>
+
+                <div onclick="viewImg(4)" class="boxImg">
+                    <img src="imgSec/imgOne.jpg" alt="">
+                </div>
+
+                <div onclick="viewImg(5)" class="boxImg">
+                    <img src="imgSec/imgSeven.jpg" alt="">
+                </div>
+
+                <div onclick="viewImg(6)" class="boxImg">
+                    <img src="imgSec/imgSix.jpg" alt="">
+                </div>
+
+                <div onclick="viewImg(7)" class="boxImg">
+                    <img src="imgSec/imgTen.jpg" alt="">
+                </div>
+
+                <div onclick="viewImg(8)" class="boxImg">
+                    <img src="imgSec/imgThree.jpg" alt="">
+                </div>
+                
+            </div>
+        </section>
+
+        <section>
+            <div class="viewImgSec">
+                <div class="viewImg">
+
+
+                    <div class="setImg">
+                        <img src="images/imgOne.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <span onclick="closeBtn()" class="closeBtn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
+                    </div>
+
+                    <div>
+                        <span onclick="updateImage(-1)" class="prevBtn">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </span>
+                    </div>
+
+                    <div>
+                        <span onclick="updateImage(1)" class="nextBtn">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+
+                    <div class="counter"> 
+                        <h3> 3 / 9</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
